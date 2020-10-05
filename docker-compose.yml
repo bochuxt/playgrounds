@@ -80,6 +80,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: flink-test
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
     volumes:
       - ./examples/mysql/sql:/docker-entrypoint-initdb.d
   adminer:
